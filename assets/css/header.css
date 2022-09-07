@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap);
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rowdies', cursive;
+}
+
+.menuh {
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.nome {
+    margin-left: 35px;
+    min-height: 40px;
+    margin-top: 12px;
+}
+
+.menuh li {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuh li a {
+    color: black;
+    text-decoration: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    transition: background .6s;
+    border-radius: 200px
+}
+
+.menuh li a:hover {
+    background-color: gray;
+;
+}
+
+.menuh {
+    margin-right: 20px;
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: background .6s;
+    align-items: center;
+}
+
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: rgb(0, 0, 0);
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: rgb(0, 0, 0);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+input {
+    display: none;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (max-width:900px) {
+    .menuh {
+        flex-direction: column;
+        display: none;
+    }
+    .menu{
+        margin-top: 5px;
+    }
+
+    header label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nome img{
+        width: 15%;
+    }
+}
+
+
+.menu {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: none;
+    top: 10px;
+    right: 10px;
+    display: block;
+}
+
+@media (min-width: 901px) {
+    .menu {
+        display: none;
+    }
+}
+
+input:checked~label .menuh {
+    display: block;
+    height: 305px;
+}
+
+@media (max-width:900px) {
+    .nome{
+        margin-top: 17px;
+    }
+    header {
+        align-items: flex-start;
+
+    }
+}
