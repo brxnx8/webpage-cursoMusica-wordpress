@@ -7,8 +7,7 @@
     <title><?php bloginfo('name') ?> | <?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-<header>
+<body>
 <header class="headerc">
         <div class="nome">
             <img src="assets\images\Logo.png" alt="" width="25%">
@@ -26,5 +25,4 @@
                 </ul>
             </label>
         </div>
-    </header>
 </header>
