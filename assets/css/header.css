@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap);
 
 * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Rowdies', cursive;
 }
 
@@ -11,6 +8,12 @@
     list-style: none;
     padding: 0;
     justify-content: space-between;
+    gap: 4em;
+    margin-right: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .nome {
@@ -22,12 +25,14 @@
 .menuh li {
     display: flex;
     flex-direction: row;
+    font-size: larger;
 }
 
 .menuh li a {
+
     color: black;
     text-decoration: none;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     transition: background .6s;
@@ -35,19 +40,11 @@
 }
 
 .menuh li a:hover {
-    background-color: gray;
-;
+    background-color: rgba(128, 128, 128, 0.356);
 }
 
-.menuh {
-    margin-right: 20px;
-    list-style: none;
-    padding: 0; 
-    display: flex;
-    flex-direction: row;
-}
-
-header {
+.headerc {
+    font-family: 'Rowdies', cursive;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -134,17 +131,28 @@ input:checked~label .hamburguer:after {
         flex-direction: column;
         display: none;
     }
-    .menu{
+
+    .menu {
         margin-top: 5px;
     }
 
-    header label {
+    .headerc label {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
-    .nome img{
+
+    .nome img {
         width: 15%;
+    }
+
+    .nome {
+        margin-top: 17px;
+    }
+
+    .headerc {
+        align-items: flex-start;
+
     }
 }
 
@@ -168,14 +176,4 @@ input:checked~label .hamburguer:after {
 input:checked~label .menuh {
     display: block;
     height: 305px;
-}
-
-@media (max-width:900px) {
-    .nome{
-        margin-top: 17px;
-    }
-    header {
-        align-items: flex-start;
-
-    }
 }
