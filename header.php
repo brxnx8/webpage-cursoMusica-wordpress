@@ -9,5 +9,22 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-
+<header class="headerc">
+        <div class="nome">
+            <img src="assets\images\Logo.png" alt="" width="25%">
+        </div>
+        <div>
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+                <ul class="menuh">
+                    <li><a href="#">Agenda</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Preços</a></li>
+                </ul>
+            </label>
+        </div>
+    </header>
 </header>
