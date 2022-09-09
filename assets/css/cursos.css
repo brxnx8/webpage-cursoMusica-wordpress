@@ -1,0 +1,93 @@
+body{
+    --courseButtonColor: #808080;
+    --courseButtonColorHover: #303030;
+    --courseButtonFontColor: #FFF;
+    background-color: #C0C0C0;
+}
+
+.coursesPageTitle{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+
+}
+
+.coursesOptions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 2%;
+
+}
+
+.courseSection{
+    width: 200px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1em;
+    gap: 1em;
+
+    background-color: #FFF;
+    border-radius: 10px;
+
+    box-shadow: 3px -3px 2px #808080;
+}
+
+.courseHeader, .courseFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.courseSection img{
+    width: 100px;
+    height: 100px;
+}
+
+.courseTitle{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.courseDescriptionList{
+    list-style-type: none;
+    margin: 1em;
+    height: 100%;
+    text-align: center;
+}
+
+.courseDescriptionList li:not(:first-child){
+    margin-top: 1em;
+}
+
+.coursePrice{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.courseSectionButton{
+    width: 180px;
+
+    background-color: var(--courseButtonColor);
+    padding: 0.5em;
+
+    border-style: none;
+    border-radius: 5px;
+    
+    color: var(--courseButtonFontColor);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.courseSectionButton:hover{
+    background-color: var(--courseButtonColorHover);
+}
