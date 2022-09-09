@@ -2,3 +2,8 @@
 Author: Injunior
 Description: Estilo das paginas
 Version: 1 */
+
+@import "assets/css/HomePage.css";
+@import "./assets/css/header.css";
+@import "./assets/css/quemsomos.css";
+@import "./assets/css/reset.css";
