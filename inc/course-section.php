@@ -20,9 +20,9 @@ function createDescription(){
 ?>
 
 <?php
-function createCourseSection($buttonMessage = 'ADQUIRA JÁ'){
+function createCourseSection($courseIndex, $buttonMessage = 'ADQUIRA JÁ'){
     ?>
-    <div class="courseSection">
+    <div class="courseSection" id="<?= 'course' . $courseIndex ?>">
         <div class="courseHeader">
             <?php 
                 $image = get_field('icone');
