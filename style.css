@@ -2,3 +2,7 @@
 Author: Injunior
 Description: Estilo das paginas
 Version: 1 */
+
+
+@import 'assets/css/reset.css';
+@import 'assets/css/cursos.css';
