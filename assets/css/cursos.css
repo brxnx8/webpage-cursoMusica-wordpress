@@ -37,6 +37,9 @@ body{
     border-radius: 10px;
 
     box-shadow: 3px -3px 2px #808080;
+
+    animation: slide 1.2s forwards;
+    opacity: 0;
 }
 
 .courseHeader, .courseFooter{
@@ -90,4 +93,15 @@ body{
 
 .courseSectionButton:hover{
     background-color: var(--courseButtonColorHover);
+}
+
+@keyframes slide{
+    0% { 
+        transform: translateX(-100%);
+
+    }
+    100% { 
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
