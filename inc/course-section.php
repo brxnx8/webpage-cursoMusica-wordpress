@@ -1,14 +1,17 @@
 <?php
 
-function createDescription($courseIndex){
-    $description = get_field('curso_' . $courseIndex . '_descricao');
-    $descriptionTopics = preg_split('/\r\n|\n|\r/', $description);
+function createDescription(){
+    $description = get_the_content();
+    $descriptionTopics = explode('.', $description);
     ?>
     <ul class="courseDescriptionList">
         <?php 
             foreach($descriptionTopics as $topic){
-                echo('<li><p>' . $topic . '</p></li>');
-    
+                if($topic != ''){
+                    echo('<li><p>' . $topic . '</p></li>');
+                    echo('<hr>');
+                }
+                
             }
         ?>
     </ul>
@@ -17,26 +20,26 @@ function createDescription($courseIndex){
 ?>
 
 <?php
-function createCourseSection($courseIndex, $buttonMessage = 'ADQUIRA JÁ'){
+function createCourseSection($buttonMessage = 'ADQUIRA JÁ'){
     ?>
     <div class="courseSection">
         <div class="courseHeader">
             <?php 
-                $image = get_field('curso_' . $courseIndex . '_icone');
+                $image = get_field('icone');
                 if( $image ) {
                     echo wp_get_attachment_image( $image );
                 }
             ?>
             <h2 class="courseTitle">
-                <?php the_field('curso_' . $courseIndex . '_titulo')?>
+                <?php the_title()?>
             </h2>
         </div>
         <?php 
-            createDescription($courseIndex);
+            createDescription();
         ?>
         <div class="courseFooter">
             <p class="coursePrice">
-                R$<?php the_field('curso_' . $courseIndex . '_preco')?>
+                R$<?php the_field('preco')?>
             </p>
             <a>
                 <button class="courseSectionButton">
