@@ -10,8 +10,8 @@
 <body>
 <header class="headerc">
         <div class="nome">
-            <img src="assets\images\Logo.png" alt="" width="25%">
-        </div>
+            <img src="<?= get_template_directory_uri() ?>\assets\images\Logo.png" alt="" width="25%">
+        </div> 
         <div>
             <input id="menu-hamburguer" type="checkbox" />
             <label for="menu-hamburguer">
