@@ -12,7 +12,22 @@
     <title><?php bloginfo('name') ?> | <?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-<header>
-
+<body>
+<header class="headerc">
+        <div class="nome">
+            <img src="<?= get_template_directory_uri() ?>\assets\images\Logo.png" alt="" width="25%">
+        </div> 
+        <div>
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+                <ul class="menuh">
+                    <li><a href="#">Agenda</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Preços</a></li>
+                </ul>
+            </label>
+        </div>
 </header>
