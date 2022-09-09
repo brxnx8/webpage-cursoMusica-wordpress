@@ -2,7 +2,7 @@ body{
     --courseButtonColor: #808080;
     --courseButtonColorHover: #303030;
     --courseButtonFontColor: #FFF;
-    background-color: #C0C0C0;
+    --sectionBackgroundColor: #C0C0C0; 
 }
 
 .coursesPageTitle{
@@ -33,10 +33,10 @@ body{
     padding: 1em;
     gap: 1em;
 
-    background-color: #FFF;
+    background-color: var(--sectionBackgroundColor);
     border-radius: 10px;
 
-    box-shadow: 3px -3px 2px #808080;
+    box-shadow: 0 0 5px #000;
 
     animation: slide 1.2s forwards;
     opacity: 0;
