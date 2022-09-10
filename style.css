@@ -3,9 +3,13 @@ Author: Injunior
 Description: Estilo das paginas
 Version: 1 */
 
+@import "./assets/css/HomePage.css";
+@import "./assets/css/header.css";
+@import "./assets/css/cursos.css";
+@import "./assets/css/quemsomos.css";
+@import "./assets/css/reset.css";
 
-@import 'assets/css/reset.css';
-@import 'assets/css/cursos.css';
+
 
 /* Footer */
 
@@ -41,38 +45,3 @@ Version: 1 */
    width: 40%;
    margin: auto;
 }
-
-
-
-
-
-/* Pagina inicial
-    Seçao quem somos */
-
-
-    .about{
-        background-color: aqua;
-        min-height: 616px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        
-    }
-    .about-text{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .text-about{
-        width: 40%;
-        line-height: 45px;
-    }
-    .about-button{
-        background-color: black;
-        color: white;
-        width: 20%;
-        margin: 10px auto 10px auto;
-        text-align: center;
-        padding: 10px;
-        border-radius: 10px;
-    }

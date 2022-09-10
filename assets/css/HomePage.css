@@ -1,0 +1,174 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.sectionTitle{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Presentation{
+    background-color: #ccc;
+    height: 100vh;
+
+    padding: 15%;
+}
+
+h1.title{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 4.5em;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+p.description{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+
+    text-align: center;    
+}
+
+.sectionCorses{
+    background-color: #ccc;
+    height: 30em;
+}
+.about{
+    background-color: rgb(255, 255, 255);
+    height: 10em;
+}
+.textAbout{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.sectionDepositions{
+    background-color: rgb(255, 255, 255);
+    height: 30em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleDepositions{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.cardsDepositions{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+
+    display: flex;
+    gap: 50px;
+
+    margin-left: 60px;
+    margin-right: 60PX;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    
+    border: 2px solid #000;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    max-width: 400px;
+}
+
+.name,
+.stage,
+.Testimony,
+.buttonSeeMore{
+    font-family: 'Barlow', sans-serif;
+}
+
+.Testimony{
+    font-weight: 400;
+    font-size: 1.35em;
+    
+    text-align: center;
+    margin-bottom: 10px;       
+}
+
+.name,
+.stage{
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.student{
+    display: flex;
+}
+
+.buttonSeeMore{
+    font-weight: 500;
+    font-size: 1.6em;
+
+    margin-top: 40px;
+
+    background-color: black;
+    color: aliceblue;
+
+    min-height: 2em;
+    min-width: 9em;
+
+    border-radius: 8px;
+
+}
+
+/* Pagina inicial
+    Seçao quem somos */
+
+
+    .about{
+        background-color: aqua;
+        min-height: 616px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    .about-text{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .text-about{
+        width: 40%;
+        line-height: 45px;
+
+    }
+    .about-button{
+        background-color: black;
+        color: white;
+        width: 25%;
+        margin: 10px auto 10px auto;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    @media (max-width: 480px){
+        .iframe-about{
+            width: 300px;
+            height: 150px;
+            margin-top: 10px;
+        }
+        .text-about{
+            line-height: normal;
+            width: 70%;
+        }
+}
