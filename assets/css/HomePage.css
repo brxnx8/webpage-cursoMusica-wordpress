@@ -153,7 +153,7 @@ p.description{
     Seçao quem somos */
     .about{
         background-color: aqua;
-        min-height: 616px;
+        min-height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -165,8 +165,8 @@ p.description{
         flex-wrap: wrap;
     }
     .text-about{
-        width: 40%;
-        line-height: 45px;
+        width: 50%;
+        line-height: 20px;
 
     }
     .about-button{
@@ -179,6 +179,9 @@ p.description{
         border-radius: 10px;
     }
     @media (max-width: 480px){
+        .about{
+            height: 700px;
+        }
         .iframe-about{
             width: 300px;
             height: 150px;
