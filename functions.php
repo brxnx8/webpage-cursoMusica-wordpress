@@ -1,7 +1,12 @@
 <?php
     function queue_css(){
-        wp_register_style('style', get_template_directory_uri().'/style.css');
-        wp_enqueue_style( 'style', get_template_directory_uri().'/style.css');
+        wp_register_style('style', get_template_directory_uri().'/style.css', [], '1.0.0');
+        wp_enqueue_style( 'style', get_template_directory_uri().'/style.css', [], '1.0.0');
+    }
+    function queue_script(){
+        wp_register_script('cursos', get_template_directory_uri().'/js/addCourseSectionAnimation.js', [], '1.0.0');
+        wp_enqueue_script('cursos', get_template_directory_uri().'/js/addCourseSectionAnimation.js', [], '1.0.0');
     }
     add_action('wp_enqueue_scripts', 'queue_css');
+    add_action('wp_enqueue_scripts', 'queue_script');
 ?>
