@@ -17,8 +17,8 @@
             enim ad.
         </p>
     </div>
-
 </section>
+
 <section class="about">
         <div class="about-text">
             <div class="text-about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore rem provident, perferendis minima facilis, aut eos corrupti magni quisquam blanditiis et impedit repellendus quia tempore tempora harum totam voluptatem! Pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laboriosam natus odio, dolore asperiores ducimus autem consequatur tenetur sit! Quidem quisquam ab animi quos voluptate error assumenda sint maxime?</div>
