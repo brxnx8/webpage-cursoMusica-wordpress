@@ -9,12 +9,10 @@
 <section class="sectionTitle">   
     <div class="Presentation">
         <h1 class="title">
-            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+            <?php the_field('apresentacao_titulo'); ?>
         </h1> 
         <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad.
+            <?php the_field('apresentacao_descricao'); ?>
         </p>
     </div>
 </section>
@@ -33,21 +31,21 @@
     <h1 class="titleDepositions">Depoimentos</h1>
     <div class="cardsDepositions">
         <div class="card">
-            <p class="Testimony"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Aut accusantium rem tempore deleniti repudiandae sunt nulla, optio praesentium debitis rerum, voluptatibus laborum quam. 
-                Esse, odio provident libero at eaque minus?
+            <p class="Testimony"> 
+            <?php the_field('depoimento_texto_depoimento'); ?>
             </p>
             <div class="student">
-                <h3 class="name">Felipe Farpas</h3> , <h3 class="stage">Aluno</h3>
+                <h3 class="name"><?php the_field('depoimento_nome'); ?></h3>
+                <h3 class="stage"><?php the_field('depoimento_status_do_aluno'); ?></h3>
             </div> 
         </div>
         <div class="card">
-            <p class="Testimony"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Aut accusantium rem tempore deleniti repudiandae sunt nulla, optio praesentium debitis rerum, voluptatibus laborum quam. 
-                Esse, odio provident libero at eaque minus?
+            <p class="Testimony">                 
+                <?php the_field('depoimento_2_texto_depoimento'); ?>
             </p>
             <div class="student">
-                <h3 class="name">Felipe Farpas</h3> , <h3 class="stage">Aluno</h3>
+                <h3 class="name"><?php the_field('depoimento_2_nome'); ?></h3>
+                <h3 class="stage"><?php the_field('depoimento_2_status_do_aluno'); ?></h3>
             </div>
         </div>
     </div>
