@@ -5,7 +5,7 @@
 <?php 
     get_header();
 ?>
-<h1>HomePage</h1>
+
 <section class="sectionTitle">   
     <div class="Presentation">
         <h1 class="title">
