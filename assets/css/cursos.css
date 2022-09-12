@@ -1,8 +1,11 @@
 body{
+    --sectionBackgroundColor: #C0C0C0; 
+    --sectionBackgroundColorHover: #E8E8E8;
+    --sectionShadowColor: #000;
+
     --courseButtonColor: #808080;
     --courseButtonColorHover: #303030;
-    --courseButtonFontColor: #FFF;
-    --sectionBackgroundColor: #C0C0C0; 
+    --courseButtonFontColor: #FFF;   
 }
 
 .coursesPageTitle{
@@ -10,25 +13,27 @@ body{
     font-weight: bold;
     text-align: center;
     padding-top: 1em;
-
+    padding-bottom: 1em;
 }
 
 .coursesOptions{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2em;
-    margin: 2%;
-
+    gap: 3em;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3em;
 }
 
 .courseSection{
-    width: 200px;
-    min-height: 400px;
+    width: min(200px, 95%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    text-align: center;
 
     padding: 1em;
     gap: 1em;
@@ -36,10 +41,14 @@ body{
     background-color: var(--sectionBackgroundColor);
     border-radius: 10px;
 
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px var(--sectionShadowColor);
 
     animation: slide 1.2s forwards;
     opacity: 0;
+}
+
+.courseSection:hover{
+    background-color: var(--sectionBackgroundColorHover);
 }
 
 .courseHeader, .courseFooter{
@@ -52,8 +61,7 @@ body{
 }
 
 .courseSection img{
-    width: 100px;
-    height: 100px;
+    width: min(100px, 95%);
 }
 
 .courseTitle{
@@ -61,14 +69,17 @@ body{
     font-weight: bold;
 }
 
-.courseDescriptionList{
+.courseSection ul, .courseSection ol{
     list-style-type: none;
     margin: 1em;
     height: 100%;
-    text-align: center;
 }
 
-.courseDescriptionList li:not(:first-child){
+.courseSection li{
+    margin-bottom: 1em;
+}
+
+.courseSection li:not(:first-child){
     margin-top: 1em;
 }
 
@@ -88,7 +99,6 @@ body{
     
     color: var(--courseButtonFontColor);
     font-size: 1.1em;
-    font-weight: bold;
 }
 
 .courseSectionButton:hover{
@@ -98,10 +108,18 @@ body{
 @keyframes slide{
     0% { 
         transform: translateX(-100%);
-
     }
     100% { 
         transform: translateX(0%);
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 210px){
+    .courseSectionButton{
+        width: 100px;
+    }
+    .coursePrice{
+        font-size: 1.5em;
     }
 }

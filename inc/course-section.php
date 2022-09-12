@@ -2,20 +2,14 @@
 
 function createDescription(){
     $description = get_the_content();
-    $descriptionTopics = explode('.', $description);
-    ?>
-    <ul class="courseDescriptionList">
-        <?php 
-            foreach($descriptionTopics as $topic){
-                if($topic != ''){
-                    echo('<li><p>' . $topic . '</p></li>');
-                    echo('<hr>');
-                }
-                
-            }
-        ?>
-    </ul>
-<?php
+    $descriptionTopics = explode('</li>', $description);
+
+    foreach($descriptionTopics as $topic){
+        if($topic != ''){
+            echo($topic . '</li>');
+            echo('<hr>');
+        }     
+    }
 }
 ?>
 
