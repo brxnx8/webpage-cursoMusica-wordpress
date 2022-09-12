@@ -139,17 +139,22 @@ p.description{
         min-height: 450px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         
     }
     .about-text{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        height: 60%;
+        align-items: initial;
+        align-content: center;
+        gap: 10px;
+
     }
     .text-about{
-        width: 50%;
-        line-height: 20px;
+        width: 40%;
+        line-height: normal;
 
     }
     .about-button{
@@ -161,9 +166,9 @@ p.description{
         padding: 10px;
         border-radius: 10px;
     }
-    @media (max-width: 480px){
+    @media (max-width: 700px){
         .about{
-            height: 700px;
+            height: 600px;
         }
         .iframe-about{
             width: 300px;
@@ -172,6 +177,6 @@ p.description{
         }
         .text-about{
             line-height: normal;
-            width: 70%;
+            width: 100%;
         }
 }
