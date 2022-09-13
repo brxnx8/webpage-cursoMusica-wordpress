@@ -36,6 +36,7 @@
             </p>
             <div class="student">
                 <h3 class="name"><?php the_field('depoimento_nome'); ?></h3>
+                <pre> - </pre>
                 <h3 class="stage"><?php the_field('depoimento_status_do_aluno'); ?></h3>
             </div> 
         </div>
@@ -45,6 +46,7 @@
             </p>
             <div class="student">
                 <h3 class="name"><?php the_field('depoimento_2_nome'); ?></h3>
+                <pre> - </pre>
                 <h3 class="stage"><?php the_field('depoimento_2_status_do_aluno'); ?></h3>
             </div>
         </div>
