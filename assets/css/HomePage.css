@@ -120,6 +120,11 @@ p.description{
 
 .student{
     display: flex;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .buttonSeeMore{
@@ -149,8 +154,7 @@ p.description{
 
 }
 
-/* Pagina inicial
-    Seçao quem somos */
+/* --------------- SEÇÃO QUEM SOMOS --------------- */
     .about{
         background-color: aqua;
         min-height: 450px;
@@ -181,7 +185,17 @@ p.description{
         margin: 10px auto 10px auto;
         text-align: center;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1.6em;
+        transition: 0.5s ease-in;
+    }
+    .about-button:hover{
+        border: solid 1px black;
+    
+        color: black;
+        background-color: aliceblue;
+    
     }
     @media (max-width: 700px){
         .about{
