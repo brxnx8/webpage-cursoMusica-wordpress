@@ -19,8 +19,8 @@
 
 <section class="about">
         <div class="about-text">
-            <div class="text-about"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore rem provident, perferendis minima facilis, aut eos corrupti magni quisquam blanditiis et impedit repellendus quia tempore tempora harum totam voluptatem! Pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laboriosam natus odio, dolore asperiores ducimus autem consequatur tenetur sit! Quidem quisquam ab animi quos voluptate error assumenda sint maxime?</p></div>
-            <iframe  class="iframe-about" width="400" height="200" src="https://www.youtube.com/embed/X2mOfqeAH7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text-about"><p><?php the_field('sobre-texto'); ?></p></div>
+            <iframe  class="iframe-about" width="400" height="200" src="<?php the_field('sobre-youtube'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="about-button">CONHEÇA MAIS</div>
 </section>
