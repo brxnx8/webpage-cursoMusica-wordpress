@@ -287,7 +287,7 @@ p.description{
     background-color: aliceblue;
 }
 
-.preview, .next{
+.previewButton, .nextButton{
     position: absolute;
     top: calc(50% - 25px);
     background-color: rgba(0, 0, 0, 0.5);
@@ -299,10 +299,10 @@ p.description{
     height: 50px;
 }
 
-.preview{   
+.previewButton{   
     left: 3%;   
 }
 
-.next{
+.nextButton{
     right: 3%;
 }

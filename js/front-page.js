@@ -1,13 +1,7 @@
 var i = 0
 let course = document.getElementsByClassName('courses')
 
-function test(){
-
-  course[i].style.display = 'block'
-  
-}
 function next(){
-
   let limit = course.length
 
   if (i < limit-1){
@@ -19,11 +13,9 @@ function next(){
     course[i].style.display = 'none'
     i = 0
     course[i].style.display = 'block'
-  }
-
-  document.querySelector('.preview').style.display = 'block'
-
+  } 
 }
+
 function preview(){
   let limit = course.length
   if (i > 0){
@@ -36,6 +28,4 @@ function preview(){
     i = limit - 1
     course[i].style.display = 'block'
   }
-  document.querySelector('.next').style.display = 'block' 
-
 }

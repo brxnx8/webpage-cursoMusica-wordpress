@@ -25,7 +25,7 @@
         <div class="about-button">CONHEÇA MAIS</div>
 </section>
 <section class="sectionCourses">
-        <button onclick="preview()" class="preview">&#10094</button>
+        <button onclick="preview()" class="previewButton">&#10094</button>
        <?php 
             $args = array('category_name' => 'Curso');
             $courses = new WP_Query($args); 
@@ -50,7 +50,7 @@
                 }
             }
         ?>
-        <button onclick="next()" class="next">&#10095</button>
+        <button onclick="next()" class="nextButton">&#10095</button>
        
 
 </section>
