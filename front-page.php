@@ -24,31 +24,33 @@
         </div>
         <div class="about-button">CONHEÇA MAIS</div>
 </section>
-<section class="sectionCorses">
-
-
-        <button onclick="preview()" class="preview">anterior</button>
-       
-        <?php if ( have_posts() ) { while ( have_posts() ) { the_post(); ?>
-        
-        <section class="courses">
-            <div>
-
-
-              <?php if( get_field('curso_imagem') ): ?>
-                  <img src="<?php the_field('curso_imagem'); ?>" alt="" srcset="" width="150" height="150">
-              <?php endif; ?>
-
-
-            </div>
-            <div>
-              <h1> <?php the_field('curso_nome'); ?> </h1>
-            </div>
-        </section>
-
-            <?php }}?>
-
-        <button onclick="next()" class="next">proximo</button>
+<section class="sectionCourses">
+        <button onclick="preview()" class="preview">&#10094</button>
+       <?php 
+            $args = array('category_name' => 'Curso');
+            $courses = new WP_Query($args); 
+            if ( have_posts() ) { 
+                while ( $courses->have_posts() ) { 
+                    $courses->the_post(); ?>
+                    <section class="courses">
+                        <?php if( get_field('imagem_ilustrativa') ): ?>
+                            <figure class="courseFigure">
+                                <img src="<?php the_field('imagem_ilustrativa'); ?>"> 
+                                <figcaption class="courseCarouselTitle">
+                                    <h1><?php the_title() ?></h1>
+                                    <p class="courseCarouselDescription">
+                                        <?php the_field('breve_descricao') ?>
+                                    </p>
+                                    <button class="courseButtonCarousel">Saiba Mais</button>
+                                </figcaption>                       
+                            </figure>
+                        <?php endif; ?>
+                    </section>
+                <?php 
+                }
+            }
+        ?>
+        <button onclick="next()" class="next">&#10095</button>
        
 
 </section>
