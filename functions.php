@@ -9,4 +9,12 @@
     }
     add_action('wp_enqueue_scripts', 'queue_css');
     add_action('wp_enqueue_scripts', 'queue_script');
+
+    function frontpage(){
+        wp_register_script('cursosjs', get_template_directory_uri().'/js/front-page.js', [], '1.0.0');
+        wp_enqueue_script('cursosjs', get_template_directory_uri().'/js/front-page.js', [], '1.0.0');
+    }
+    add_action('wp_enqueue_scripts', 'frontpage');
+
+
 ?>
