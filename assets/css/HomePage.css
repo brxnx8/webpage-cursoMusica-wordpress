@@ -211,3 +211,12 @@ p.description{
             width: 100%;
         }
 }
+
+/*---------------  SEÇAO CURSOS --------------- */
+
+.sectionCorses{
+    display: flex;
+}
+.courses{
+    display: none;
+}
