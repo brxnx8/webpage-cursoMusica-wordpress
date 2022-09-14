@@ -12,7 +12,7 @@
     <title><?php bloginfo('name') ?> | <?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body onload="test()">
 <header class="headerc">
         <div class="nome">
             <img src="<?= get_template_directory_uri() ?>\assets\images\Logo.png" alt="" width="25%">
