@@ -3,7 +3,6 @@ function addAnimationToSection(sectionIndex, animationDuration){
     let section = document.getElementById("course" + sectionIndex)
     let delay = sectionIndex * animationDuration * 1000
     section.style.animationDelay = delay.toString() + "ms"
-    section.style.zIndex = sectionIndex + 1
 }
 
 function addAnimationToCourses(numOfSections, animationDuration){

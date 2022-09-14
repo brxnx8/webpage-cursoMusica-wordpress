@@ -5,7 +5,7 @@
 <?php 
     get_header();
 ?>
-
+<?php frontpage();?>
 <section class="sectionTitle" style="background-image: url(<?= the_field('imagem_de_apresentacao') ?>); backgound-position:center;  "> 
     <div class="Presentation">
         <h1 class="title">
@@ -25,6 +25,32 @@
         <div class="about-button">CONHEÇA MAIS</div>
 </section>
 <section class="sectionCorses">
+
+
+        <button onclick="preview()" class="preview">anterior</button>
+       
+        <?php if ( have_posts() ) { while ( have_posts() ) { the_post(); ?>
+        
+        <section class="courses">
+            <div>
+
+
+              <?php if( get_field('curso_imagem') ): ?>
+                  <img src="<?php the_field('curso_imagem'); ?>" alt="" srcset="" width="150" height="150">
+              <?php endif; ?>
+
+
+            </div>
+            <div>
+              <h1> <?php the_field('curso_nome'); ?> </h1>
+            </div>
+        </section>
+
+            <?php }}?>
+
+        <button onclick="next()" class="next">proximo</button>
+       
+
 </section>
 
 <section class="sectionDepositions">
