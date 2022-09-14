@@ -1,4 +1,4 @@
-var i = 1
+var i = 0
 let course = document.getElementsByClassName('courses')
 
 function test(){
@@ -7,28 +7,35 @@ function test(){
   
 }
 function next(){
+
   let limit = course.length
-  
+
   if (i < limit-1){
-  course[i].style.display = 'none'
-  i = i + 1
-  course[i].style.display = 'block'}
-  document.querySelector('.preview').style.display = 'block'
-  if(i == limit-1){
-    document.querySelector('.next').style.display = 'none' 
+    course[i].style.display = 'none'
+    i = i + 1
+    course[i].style.display = 'block'
   }
+  else if(i == limit - 1){
+    course[i].style.display = 'none'
+    i = 0
+    course[i].style.display = 'block'
+  }
+
+  document.querySelector('.preview').style.display = 'block'
 
 }
 function preview(){
-  
+  let limit = course.length
   if (i > 0){
     course[i].style.display = 'none'
     i = i - 1
     course[i].style.display = 'block'
   }
+  else if(i == 0){
+    course[i].style.display = 'none'
+    i = limit - 1
+    course[i].style.display = 'block'
+  }
   document.querySelector('.next').style.display = 'block' 
-  if(i == 0){
-      document.querySelector('.preview').style.display = 'none' 
-    }
 
 }
