@@ -55,7 +55,7 @@
 
 <section class="sectionDepositions">
     <h1 class="titleDepositions">Depoimentos</h1>
-    <div class="cardsDepositions">
+    <div class="cardsDepositions">        
         <div class="card">
             <p class="Testimony"> 
             <?php the_field('depoimento_texto_depoimento'); ?>
