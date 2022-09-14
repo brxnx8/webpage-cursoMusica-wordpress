@@ -57,27 +57,27 @@
 
 <section class="sectionDepositions">
     <h1 class="titleDepositions">Depoimentos</h1>
-    <div class="cardsDepositions">        
-        <div class="card">
-            <p class="Testimony"> 
-            <?php the_field('depoimento_texto_depoimento'); ?>
-            </p>
-            <div class="student">
-                <h3 class="name"><?php the_field('depoimento_nome'); ?></h3>
-                <pre> - </pre>
-                <h3 class="stage"><?php the_field('depoimento_status_do_aluno'); ?></h3>
-            </div> 
-        </div>
-        <div class="card">
-            <p class="Testimony">                 
-                <?php the_field('depoimento_2_texto_depoimento'); ?>
-            </p>
-            <div class="student">
-                <h3 class="name"><?php the_field('depoimento_2_nome'); ?></h3>
-                <pre> - </pre>
-                <h3 class="stage"><?php the_field('depoimento_2_status_do_aluno'); ?></h3>
-            </div>
-        </div>
+    <div class="cardsDepositions">       
+        <?php
+         $args = array('category_name' => 'Depoimentos','posts_per_page' => '2');
+         $quote = new WP_Query($args); 
+         if ( have_posts() ) { 
+             while ( $quote->have_posts() ) { 
+                $quote->the_post(); ?>
+                <div class="card">                    
+                        <?php the_content( ); ?>                    
+                    <div class="student">
+                        <h3 class="name"><?php the_field('autor'); ?></h3>
+                        <pre> - </pre>
+                        <h3 class="stage"><?php the_field('status'); ?></h3>
+                    </div> 
+                </div>        
+        <?php 
+                }
+            }
+        ?>
+        
+        
     </div>
 
 <button class="buttonSeeMore">VEJA MAIS</button>

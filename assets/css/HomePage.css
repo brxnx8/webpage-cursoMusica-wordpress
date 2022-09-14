@@ -81,10 +81,13 @@ p.description{
     background-color: rgb(255, 255, 255);
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
 
-    margin-left: 60px;
-    margin-right: 60PX;
+    margin-left: 10px;
+    margin-right: 10PX;
+
 }
 
 .card{
@@ -100,12 +103,12 @@ p.description{
 
 .name,
 .stage,
-.Testimony,
+.card p,
 .buttonSeeMore{
     font-family: 'Barlow', sans-serif;
 }
 
-.Testimony{
+.card p{
 
     font-weight: 400;
     font-size: 1.35em;
