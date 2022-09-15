@@ -5,21 +5,21 @@
 <?php 
     get_header();
 ?>
-<section class="sectionTitle" style="background-image: url(<?= the_field('imagem_de_apresentacao') ?>); backgound-position:center;  "> 
+<section class="sectionTitle" style="background-image: url(<?= the_field('titulo_imagem_fundo') ?>); backgound-position:center;  "> 
     <div class="Presentation">
         <h1 class="title">
-            <?php the_field('apresentacao_titulo'); ?>
+            <?php the_field('titulo_titulo'); ?>
         </h1> 
         <p class="description">
-            <?php the_field('apresentacao_descricao'); ?>
+            <?php the_field('titulo_descricao'); ?>
         </p>
     </div>
 </section>
 
 <section class="about">
         <div class="about-text">
-            <div class="text-about"><p><?php the_field('sobre-texto'); ?></p></div>
-            <iframe  class="iframe-about" width="400" height="200" src="<?php the_field('sobre-youtube'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text-about"><p><?php the_field('sobre_texto'); ?></p></div>
+            <iframe  class="iframe-about" width="400" height="200" src="<?php the_field('sobre_youtube'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="about-button">CONHEÇA MAIS</div>
 </section>

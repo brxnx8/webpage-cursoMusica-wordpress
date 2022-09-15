@@ -2,59 +2,113 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+
+
+/* --------------- SEÇÃO PRINCIPAL --------------- */
+
 .sectionTitle{    
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-    align-items: center;    
+    min-height: 100vh;
+
+    padding: 8%;
 }
 
 .Presentation{
-    /* background-color: #ccc; */
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 
-    padding: 15%;
 }
 
 h1.title{
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
-    font-size: 4.5em;
-    word-wrap: break-word;
+    font-size: 4em;
+    width: 100%;
+    height: 20%;
     text-align: center;
 
     color: aliceblue;
 
-    margin-bottom: 40px;
+    margin-bottom: 1em;
 }
 
 p.description{
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 2em;
+    width: 100%;
+    height: 80%;
 
     color: aliceblue;
-
+    word-wrap: break-word;
     text-align: center;    
 }
 
-.sectionCorses{
-    background-color: #ccc;
-    height: 30em;
-}
+
+
+/* --------------- SEÇÃO QUEM SOMOS --------------- */
 
 .about{
-    background-color: rgb(255, 255, 255);
-    height: 10em;
+    background-color: aqua;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
+.about-text{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 60%;
+    align-items: initial;
+    align-content: center;
+    gap: 10px;
 
-.textAbout{
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
+}
+.text-about{
+    width: 40%;
+    line-height: normal;
+
+}
+.about-button{
+    background-color: black;
+    color: white;
+    width: 25%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.6em;
+    transition: 0.5s ease-in;
+    border: solid 1px black;
+}
+.about-button:hover{
+    border: solid 1px black;
+
     color: black;
+    background-color: aliceblue;
+
+}
+@media (max-width: 700px){
+    .about{
+        height: 600px;
+    }
+    .iframe-about{
+        width: 300px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .text-about{
+        line-height: normal;
+        width: 100%;
+    }
 }
 
-/* --------------- SEÇÃO DEPEOIMENTOS --------------- */
+
+
+/* --------------- SEÇÃO DEPOIMENTOS --------------- */
 
 .sectionDepositions{
     display: flex;
@@ -159,64 +213,7 @@ p.description{
 
 }
 
-/* --------------- SEÇÃO QUEM SOMOS --------------- */
-    .about{
-        background-color: aqua;
-        min-height: 450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
-    }
-    .about-text{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        height: 60%;
-        align-items: initial;
-        align-content: center;
-        gap: 10px;
 
-    }
-    .text-about{
-        width: 40%;
-        line-height: normal;
-
-    }
-    .about-button{
-        background-color: black;
-        color: white;
-        width: 25%;
-        margin: 10px auto 10px auto;
-        text-align: center;
-        padding: 10px;
-        border-radius: 8px;
-        font-weight: 500;
-        font-size: 1.6em;
-        transition: 0.5s ease-in;
-        border: solid 1px black;
-    }
-    .about-button:hover{
-        border: solid 1px black;
-    
-        color: black;
-        background-color: aliceblue;
-    
-    }
-    @media (max-width: 700px){
-        .about{
-            height: 600px;
-        }
-        .iframe-about{
-            width: 300px;
-            height: 150px;
-            margin-top: 10px;
-        }
-        .text-about{
-            line-height: normal;
-            width: 100%;
-        }
-}
 
 /*---------------  SEÇAO CURSOS --------------- */
 
@@ -307,6 +304,8 @@ p.description{
 .nextButton{
     right: 3%;
 }
+
+
 
 /*------SEÇÃO AGENDA-------*/
 
