@@ -39,10 +39,12 @@
                             <figure class="courseFigure">
                                 <img src="<?php the_field('imagem_ilustrativa'); ?>"> 
                                 <figcaption class="courseCarouselTitle">
-                                    <h1><?php the_title() ?></h1>
-                                    <p class="courseCarouselDescription">
-                                        <?php the_field('breve_descricao') ?>
-                                    </p>
+                                    <div class="courseCarouselDescription">
+                                        <h1><?php the_title() ?></h1>
+                                        <p>
+                                            <?php the_field('breve_descricao') ?>
+                                        </p>
+                                    </div>
                                     <button class="courseButtonCarousel">Saiba Mais</button>
                                 </figcaption>                       
                             </figure>
