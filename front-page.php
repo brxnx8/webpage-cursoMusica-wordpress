@@ -19,9 +19,12 @@
 <section class="about">
         <div class="about-text">
             <div class="text-about"><p><?php the_field('sobre_texto'); ?></p></div>
-            <iframe  class="iframe-about" width="400" height="200" src="<?php the_field('sobre_youtube'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="iframe-about">
+                <iframe width="450" height="250" src="<?php the_field('sobre_youtube'); ?>" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="about-button">CONHEÇA MAIS</div>
+        <button class="about-button">CONHEÇA MAIS</button>
 </section>
 <section class="sectionCourses">
         <button onclick="preview()" class="previewButton">&#10094</button>

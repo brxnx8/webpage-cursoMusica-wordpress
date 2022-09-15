@@ -50,31 +50,40 @@ p.description{
 
 .about{
     background-color: aqua;
-    min-height: 450px;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 2em 1em 0 1em;
+    gap: 1em;
     
 }
 .about-text{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    height: 60%;
-    align-items: initial;
+    height: 90%;
+    align-items: center;
     align-content: center;
-    gap: 10px;
+    gap: 2em;
 
 }
 .text-about{
-    width: 40%;
-    line-height: normal;
+    width: 52%;
+    line-height: 30px;
 
+
+}
+.iframe-about{
+    width: 45%;
+}
+.iframe-about iframe{
+    width: 100%;
 }
 .about-button{
     background-color: black;
     color: white;
-    width: 25%;
+    min-width: 150px;
     margin: 10px auto 10px auto;
     text-align: center;
     padding: 10px;
@@ -91,20 +100,11 @@ p.description{
     background-color: aliceblue;
 
 }
-@media (max-width: 700px){
-    .about{
-        height: 600px;
+ /* @media (max-width: 420px){
+    .iframe-about iframe{
+        width: 10px;
     }
-    .iframe-about{
-        width: 300px;
-        height: 150px;
-        margin-top: 10px;
-    }
-    .text-about{
-        line-height: normal;
-        width: 100%;
-    }
-}
+}  */
 
 
 
