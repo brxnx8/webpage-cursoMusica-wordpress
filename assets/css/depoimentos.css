@@ -1,0 +1,38 @@
+.quotesTitle{
+    font-size: 3em; 
+    text-align: center;  
+}
+
+.quotes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.page-numbers{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0.2em;
+    border: solid 1px black;
+    transition: 0.25s ease-in;
+}
+
+.page-numbers:hover{
+    border: solid 1px black;
+
+    color: black;
+    background-color: aliceblue;
+}
