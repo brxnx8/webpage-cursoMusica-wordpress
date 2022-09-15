@@ -307,3 +307,13 @@ p.description{
 .nextButton{
     right: 3%;
 }
+
+/*------SEÇÃO AGENDA-------*/
+
+.sectionCalendar{
+    padding: 2em 4em 2em 4em;
+}
+
+.calendar thead{
+    height: 2em;
+}

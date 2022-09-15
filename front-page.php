@@ -83,6 +83,14 @@
 </section>
 
 <section class="sectionCalendar">
+    <?php 
+        $pageId = 98;
+        $page = get_post($pageId);
+        if($page){
+            $calendar = apply_filters('the_content', $page->post_content);
+            echo $calendar;
+        }
+    ?>
 </section>
 
 
