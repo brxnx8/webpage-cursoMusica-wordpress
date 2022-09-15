@@ -5,7 +5,6 @@
 <?php 
     get_header();
 ?>
-<?php frontpage();?>
 <section class="sectionTitle" style="background-image: url(<?= the_field('imagem_de_apresentacao') ?>); backgound-position:center;  "> 
     <div class="Presentation">
         <h1 class="title">
