@@ -58,7 +58,7 @@
     <h1 class="titleDepositions">Depoimentos</h1>
     <div class="cardsDepositions">       
         <?php
-         $args = array('category_name' => 'Depoimentos','posts_per_page' => '2');
+         $args = array('category_name' => 'Depoimento','posts_per_page' => '2');
          $quote = new WP_Query($args); 
          if ( have_posts() ) { 
              while ( $quote->have_posts() ) { 
