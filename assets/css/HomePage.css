@@ -298,6 +298,7 @@ p.description{
 }
 
 .buttonSeeMore{
+    font-family: 'Rowdies', cursive;
     background-color: #D2B48C;
     color: white;
     min-width: 150px;
@@ -333,6 +334,9 @@ p.description{
     height: 2em;
 }
 
+
+
+/* ------------- Para deixar responsivo ------------ */
 
 
 @media (max-width:400px) {
