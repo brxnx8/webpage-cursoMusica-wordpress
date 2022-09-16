@@ -30,6 +30,8 @@ Version: 1 */
     display: flex;
     align-items: center;
     gap: 5px;
+    color: black;
+    font-family: 'Barlow', sans-serif;
 }
 .icone-footer{
     margin-top: 5px;

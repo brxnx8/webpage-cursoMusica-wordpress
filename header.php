@@ -24,7 +24,7 @@
                     <span class="hamburguer"></span>
                 </div>
                 <ul class="menuh">
-                    <li><a href="http://cursos-musica.local/">Agenda</a></li>
+                    <li><a href="http://cursos-musica.local/">Inicio</a></li>
                     <li><a href="http://cursos-musica.local/sobre/">Sobre</a></li>
                     <li><a href="http://cursos-musica.local/cursos/">Preços</a></li>
                 </ul>
