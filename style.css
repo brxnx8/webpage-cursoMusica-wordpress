@@ -20,7 +20,7 @@ Version: 1 */
     color: white;
     text-align: center;
     width: 100%;
-    min-height: 250px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
