@@ -135,10 +135,11 @@ input:checked~label .hamburguer:after {
         position: absolute;
         padding-top: 65px;
         background-color: #a9a9a9e5;
+        z-index: 2;
     }
 
     .menu {
-        z-index: 10000;
+        z-index: 3;
         cursor: pointer;
     }
 
