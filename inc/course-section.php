@@ -35,7 +35,7 @@ function createCourseSection($courseIndex, $buttonMessage = 'ADQUIRA JÁ'){
             <p class="coursePrice">
                 R$<?php the_field('preco')?>
             </p>
-            <a>
+            <a href="<?php the_field('Link_adquiraja')?>">
                 <button class="courseSectionButton">
                     <?= $buttonMessage?>
                 </button>
