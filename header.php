@@ -15,7 +15,7 @@
 <body <?php if(is_page($homepage_id)) echo('onload="displayFirst()"'); ?>>
 <header class="headerc">
         <div class="nome">
-            <img src="<?= get_template_directory_uri() ?>\assets\images\logo.png" alt="" width="90px" height="55px">
+            <a href="http://cursos-musica.local/"><img src="<?= get_template_directory_uri() ?>\assets\images\logo.png" alt="" width="90px" height="55px"></a>
         </div> 
         <div>
             <input id="menu-hamburguer" type="checkbox" />
@@ -24,9 +24,9 @@
                     <span class="hamburguer"></span>
                 </div>
                 <ul class="menuh">
-                    <li><a href="#">Agenda</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Preços</a></li>
+                    <li><a href="http://cursos-musica.local/">Agenda</a></li>
+                    <li><a href="http://cursos-musica.local/sobre/">Sobre</a></li>
+                    <li><a href="http://cursos-musica.local/cursos/">Preços</a></li>
                 </ul>
             </label>
         </div>

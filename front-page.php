@@ -24,7 +24,7 @@
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <button class="about-button">CONHEÇA MAIS</button>
+        <a href="http://cursos-musica.local/sobre/" class="button-link"><button class="about-button">CONHEÇA MAIS</button></a>
 </section>
 <section class="sectionCourses">
         <button onclick="preview()" class="previewButton">&#10094</button>
@@ -45,7 +45,7 @@
                                             <?php the_field('breve_descricao') ?>
                                         </p>
                                     </div>
-                                    <button class="courseButtonCarousel">Saiba Mais</button>
+                                    <a href="http://cursos-musica.local/cursos/" class="button-link"><button class="courseButtonCarousel">Saiba Mais</button></a>
                                 </figcaption>                       
                             </figure>
                         <?php endif; ?>
@@ -84,7 +84,7 @@
         
     </div>
 
-<button class="buttonSeeMore">VEJA MAIS</button>
+<a href="http://cursos-musica.local/depoimentos/"><button class="buttonSeeMore">VEJA MAIS</button></a>
 </section>
 
 <section class="sectionCalendar">
