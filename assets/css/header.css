@@ -17,9 +17,9 @@
 }
 
 .nome {
-    margin-left: 35px;
-    min-height: 40px;
-    margin-top: 12px;
+    width: 30%;
+    height: 100%;
+    padding: 0;
 }
 
 .menuh li {
@@ -46,13 +46,12 @@
 .headerc {
     font-family: 'Rowdies', cursive;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     list-style: none;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    transition: background .6s;
+    transition: 0.6s;
     align-items: center;
 }
 
@@ -132,7 +131,7 @@ input:checked~label .hamburguer:after {
         display: none;
         position: absolute;
         padding-top: 65px;
-        background-color: rgba(233, 233, 233, 0.966);
+        background-color: #a9a9a9e5;
     }
 
     .menu {
@@ -144,14 +143,6 @@ input:checked~label .hamburguer:after {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-    }
-
-    .nome img {
-        width: 15%;
-    }
-
-    .nome {
-        margin-top: 17px;
     }
 
     .headerc {

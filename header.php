@@ -15,7 +15,7 @@
 <body <?php if(is_page($homepage_id)) echo('onload="displayFirst()"'); ?>>
 <header class="headerc">
         <div class="nome">
-            <img src="<?= get_template_directory_uri() ?>\assets\images\Logo.png" alt="" width="25%">
+            <img src="<?= get_template_directory_uri() ?>\assets\images\logo.png" alt="" width="90px" height="55px">
         </div> 
         <div>
             <input id="menu-hamburguer" type="checkbox" />
@@ -25,7 +25,7 @@
                 </div>
                 <ul class="menuh">
                     <li><a href="#">Agenda</a></li>
-                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Sobre</a></li>
                     <li><a href="#">Preços</a></li>
                 </ul>
             </label>

@@ -32,7 +32,6 @@ Version: 1 */
     gap: 5px;
 }
 .icone-footer{
-    border-radius: 10px;
     margin-top: 5px;
 }
 .informations{
@@ -46,4 +45,5 @@ Version: 1 */
 .copyright-footer{
    width: 40%;
    margin: auto;
+   color: black;
 }

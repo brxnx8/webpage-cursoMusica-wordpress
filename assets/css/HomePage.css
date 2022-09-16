@@ -7,6 +7,7 @@ body{
 /* --------------- SEÇÃO PRINCIPAL --------------- */
 
 .sectionTitle{    
+    text-shadow: 1px 1px 1px black;
     min-height: 100vh;
 
     padding: 8%;
@@ -71,6 +72,8 @@ p.description{
 .text-about{
     width: 52%;
     line-height: 30px;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
 
 
 }
@@ -91,8 +94,9 @@ p.description{
     border-radius: 8px;
     font-weight: 500;
     font-size: 1.6em;
-    transition: 0.5s ease-in;
+    transition: 0.2s ease-in;
     border: solid 1px #D2B48C;
+    cursor: pointer;
 }
 .about-button:hover{
     border: solid 1px #D2B48C;
@@ -101,7 +105,15 @@ p.description{
     background-color: aliceblue;
 
 }
-
+@media (max-width:1220px) {
+    .text-about{
+        width: 100%;
+    }
+    .iframe-about{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 
 
@@ -114,6 +126,7 @@ p.description{
     position: relative;
     width: 100%;
     min-height: 100vh;
+    font-family: 'Barlow', sans-serif;
 }
 .courses{
     display: none;
@@ -172,8 +185,9 @@ p.description{
     border-radius: 8px;
     font-weight: 500;
     font-size: 1.6em;
-    transition: 0.5s ease-in;
+    transition: 0.2s ease-in;
     border: solid 1px #D2B48C;
+    cursor: pointer;
 }
 
 .courseButtonCarousel:hover{
@@ -293,8 +307,9 @@ p.description{
     border-radius: 8px;
     font-weight: 500;
     font-size: 1.6em;
-    transition: 0.5s ease-in;
+    transition: 0.2s ease-in;
     border: solid 1px #D2B48C;
+    cursor: pointer;
 }
 
 .buttonSeeMore:hover{
@@ -316,4 +331,31 @@ p.description{
 
 .calendar thead{
     height: 2em;
+}
+
+
+
+@media (max-width:400px) {
+    .courseCarouselDescription h1{
+        font-size: 2em;
+    }
+    
+    .courseCarouselDescription p{
+        font-size: 1em;
+    }
+    .titleDepositions{
+        font-size: 50px;
+    }
+}
+@media (max-width:335px) {
+    .courseCarouselDescription h1{
+        font-size: 1.3em;
+    }
+    
+    .courseCarouselDescription p{
+        font-size: 0.7em;
+    }
+    .titleDepositions{
+        font-size: 30px;
+    }
 }
