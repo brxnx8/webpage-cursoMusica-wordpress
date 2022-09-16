@@ -169,11 +169,11 @@ p.description{
     gap: 1em;
 }
 .courseCarouselDescription h1{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .courseCarouselDescription p{
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .courseButtonCarousel{
